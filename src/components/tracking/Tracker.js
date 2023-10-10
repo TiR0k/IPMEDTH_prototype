@@ -6,10 +6,16 @@ export default function Tracker(){
 
 
     useEffect(() => {
-        window.addEventListener('touchmove', (event)=>{
-            setPositions({x: event.touches[0].clientX, y: event.touches[0].clientY})
-            // console.log(event)
-        })
+        if('ontouchstart' in window){
+            window.addEventListener('touchmove', (event)=>{
+                setPositions({x: event.touches[0].clientX, y: event.touches[0].clientY})
+            })
+        }else{
+            window.addEventListener('mousemove', (event)=>{
+                setPositions({x: event.clientX, y: event.clientY})
+            })
+        }
+
     }, []);
 
     const style = {
