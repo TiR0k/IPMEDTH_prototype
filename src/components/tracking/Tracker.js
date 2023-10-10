@@ -1,12 +1,14 @@
 import "./css/Tracker.css"
 import React, {useEffect, useState} from "react";
 export default function Tracker(){
+    // const firstTouchEvent = e.touches[0];
     const [positions, setPositions] = useState({x: 0, y: 0})
 
 
     useEffect(() => {
-        window.addEventListener('mousemove', (event)=>{
-            setPositions({x: event.clientX, y: event.clientY})
+        window.addEventListener('touchmove', (event)=>{
+            setPositions({x: event.touches[0].clientX, y: event.touches[0].clientY})
+            // console.log(event)
         })
     }, []);
 
@@ -16,8 +18,9 @@ export default function Tracker(){
 
     }
 
-    return (<div className="tracker">
-        <p>x: {positions.x}, y: {positions.y}</p>
+    return (<div className="tracker" >
+        <p>x: {positions.x}</p>
+        <p>y: {positions.y}</p>
         <div className="tracer" style={style}></div>
         {/*<p>y: {positions.y}</p>*/}
     </div>)
