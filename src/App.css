@@ -1,32 +1,33 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  overflow: hidden;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .App {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    /*background: green;*/
+    background: #282c34;
+    min-height: 100vh;
+    display: flex;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-.grid{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.grid {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.x{
-  position: absolute;
-  top: 50%;
-  width: 100vw;
-  height: 2px;
-  background: white;
+.x {
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    height: 2px;
+    background: white;
 }
 
 .y {
@@ -36,7 +37,6 @@
     height: 100%;
     background: white;
 }
-
 .fabricBlock {
     /*margin: 5px;*/
     position: absolute;
@@ -90,10 +90,10 @@
     align-items: center;
 }
 
-.answer{
+.answer {
     width: 50%;
     height: 100%;
-    background:  #282c34;
+    background: #282c34;
     z-index: 1;
     font-size: 30px;
     color: white;
