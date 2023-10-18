@@ -14,13 +14,6 @@ export default function Tracker() {
         if ('ontouchstart' in window) {
             window.addEventListener('pointermove', (event) => {
                 setPositions({x: event.touches[0].clientX, y: event.touches[0].clientY})
-
-                // if ((event.clientX >= (posArray[1] - 10)) && (event.clientX <= (posArray[1] + 10))) {
-                //     setHit(true);
-                //     navigator.vibrate([100, 1]);
-                // } else {
-                //     setHit(false);
-                // }
             })
         } else {
             window.addEventListener('mousemove', (event) => {

@@ -1,10 +1,30 @@
-export default function AnswerButtons(){
+import Main from "../../hoc/Main";
 
-    return(
+export default function AnswerButtons(props) {
+
+    const addAnswer = (value) => {
+        let obj = {
+            fabric: props.fabric,
+            answer: value,
+            options: props.options,
+            correct: (value === props.options[0])
+        }
+
+        props.setLog([
+            ...props.log,
+            obj
+        ])
+
+        console.log(props.log)
+
+       props.setIndex(props.index + 1);
+    }
+
+    return (
         <div className={"buttonBox"}>
-            <button className="answer">Antwoord</button>
-            <button className="answer">Antwoord</button>
-    </div>
+            <button className="answer" onClick={() => addAnswer(props.options[0])}>{props.options[0]}</button>
+            <button className="answer" onClick={() => addAnswer(props.options[1])}>{props.options[1]}</button>
+        </div>
 
     )
 }
