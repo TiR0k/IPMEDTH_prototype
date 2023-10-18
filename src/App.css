@@ -14,6 +14,12 @@
     color: white;
 }
 
+.h1__end{
+    font-size: 80px;
+    width: 100vw;
+    text-align: center;
+}
+
 .grid {
     width: 100vw;
     height: 100vh;
@@ -47,13 +53,23 @@
 }
 
 .jute{
-    background-image: url("assets/img/jute.jpg");
+    /*background-image: url("assets/img/jute.jpg");*/
     width: 100%;
     height: 100%;
 }
 
 .denim{
-    background-image: url("assets/img/denim.webp");
+    /*background-image: url("assets/img/denim.webp");*/
+    width: 100vw;
+    height: 100%;
+}
+
+.denim > .row{
+    height: 2px;
+}
+
+.cotton{
+    /*background-image: url("assets/img/katoen.webp");*/
     width: 100vw;
     height: 100%;
 }
@@ -95,37 +111,6 @@
     height: 100%;
     background: #282c34;
     z-index: 1;
-    font-size: 30px;
+    font-size: 90px;
     color: white;
-}
-
-.block1 {
-    /*margin: 5px;*/
-    position: absolute;
-    background: orange;
-    width: 100px;
-    height: 100px;
-    top: 50%;
-    left: 150px;
-}
-
-.block2 {
-    /*margin: 5px;*/
-    position: absolute;
-    background: orange;
-    width: 100px;
-    height: 100px;
-    top: 50%;
-    left: 300px;
-
-}
-
-.block3 {
-    /*margin: 5px;*/
-    position: absolute;
-    background: orange;
-    width: 100px;
-    height: 100px;
-    top: 50%;
-    left: 450px;
 }

@@ -15,16 +15,19 @@ export default function AnswerButtons(props) {
             obj
         ])
 
-        console.log(props.log)
-
-       props.setIndex(props.index + 1);
+        props.setIndex(props.index + 1);
     }
 
     return (
-        <div className={"buttonBox"}>
-            <button className="answer" onClick={() => addAnswer(props.options[0])}>{props.options[0]}</button>
-            <button className="answer" onClick={() => addAnswer(props.options[1])}>{props.options[1]}</button>
-        </div>
+        Math.floor(Math.random() * 2) === 0 ?
+            <div className={"buttonBox"}>
+                <button className="answer" onClick={() => addAnswer(props.options[0])}>{props.options[0]}</button>
+                <button className="answer" onClick={() => addAnswer(props.options[1])}>{props.options[1]}</button>
+            </div> :
+            <div className={"buttonBox"}>
+                <button className="answer" onClick={() => addAnswer(props.options[1])}>{props.options[1]}</button>
+                <button className="answer" onClick={() => addAnswer(props.options[0])}>{props.options[0]}</button>
+            </div>
 
     )
 }

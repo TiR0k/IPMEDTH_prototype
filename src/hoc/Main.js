@@ -12,7 +12,8 @@ export default function Main() {
     const [fabric, setFabric] = useState(null)
     const [fabricsUsed, setFabricsUsed] = useState([])
 
-    let fabrics = ["denim", "jute"]
+    let fabrics = ["spijkerstof", "jute", "katoen", "tule", "wol"]
+    // let fabrics = ["wol", "tule"]
 
     const setOptions = (max) => {
         let option1 = Math.floor(Math.random() * max);
@@ -27,7 +28,7 @@ export default function Main() {
             setFabric(fabrics[option1]);
             setOptionsArr([fabrics[option1], fabrics[option2]]);
             setFabricsUsed([...fabricsUsed, fabrics[option1]]);
-            console.log(fabricsUsed)
+            console.log(fabricsUsed.length, fabrics.length)
         }
 
     }
@@ -47,20 +48,21 @@ export default function Main() {
         setOptions(fabrics.length)
         // console.log(index)
         if (fabricsUsed.length === fabrics.length) {
+            // console.log(fabricsUsed, fabrics)
             downloadResults()
         }
-    }, [fabrics.length, index])
+    }, [index])
 
     return (
-        fabrics.length !== fabricsUsed.length ? <>
-                <FabricBlock fabric={fabric} options={options} index={index}/>
+        fabrics.length !== index ? <>
+                <FabricBlock fabric={fabric}/>
                 <AnswerButtons fabric={fabric} log={log} setLog={setLog} options={options}
                                index={index} setIndex={setIndex}/>
             </> :
             <>
 
                 {/*@todo maak eindscherm*/}
-                <h1>Einde van de test</h1>
+                <h1 className={"h1__end"}>Einde van de test</h1>
             </>
 
     )

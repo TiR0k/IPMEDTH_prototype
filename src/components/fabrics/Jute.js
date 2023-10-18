@@ -1,7 +1,7 @@
 export default function Jute() {
 
     const handleOver = () => {
-        navigator.vibrate([10, 1])
+        navigator.vibrate([35, 1])
     }
 
     return (
