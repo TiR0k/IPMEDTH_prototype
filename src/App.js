@@ -1,7 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import Tracker from "./components/tracking/Tracker";
 import React from "react";
+import FabricBlock from "./components/fabrics/FabricBlock";
+import AnswerButtons from "./components/buttons/AnswerButtons";
 
 function App() {
     return (
@@ -10,7 +11,8 @@ function App() {
                 <div className="x"></div>
                 <div className="y"></div>
             </div>
-            <Tracker/>
+            <FabricBlock/>
+            <AnswerButtons/>
         </div>
     );
 }
