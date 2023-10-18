@@ -1,38 +1,79 @@
-*{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-  overflow: hidden;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .App {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    /*background: green;*/
+    background: #282c34;
+    min-height: 100vh;
+    display: flex;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-.grid{
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.grid {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.x{
-  position: absolute;
-  top: 50%;
-  width: 100vw;
-  height: 2px;
-  background: white;
+.x {
+    position: absolute;
+    top: 50%;
+    width: 100vw;
+    height: 2px;
+    background: white;
 }
 
-.y{
-  position: absolute;
-  left: 50%;
-  width: 2px;
-  height: 100%;
-  background: white;
+.y {
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: white;
+}
+
+.block {
+    /*margin: 5px;*/
+    position: absolute;
+    background: orange;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+}
+
+.block1 {
+    /*margin: 5px;*/
+    position: absolute;
+    background: orange;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 150px;
+}
+
+.block2 {
+    /*margin: 5px;*/
+    position: absolute;
+    background: orange;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 300px;
+
+}
+
+.block3 {
+    /*margin: 5px;*/
+    position: absolute;
+    background: orange;
+    width: 100px;
+    height: 100px;
+    top: 50%;
+    left: 450px;
 }
