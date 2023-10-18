@@ -1,18 +1,15 @@
 {
   "files": {
-    "main.css": "/ipmedth_prototype/static/css/main.0a34ee24.css",
+    "main.css": "/ipmedth_prototype/static/css/main.c0a4bf42.css",
     "main.js": "/ipmedth_prototype/static/js/main.daf0b997.js",
     "static/js/787.98ba4490.chunk.js": "/ipmedth_prototype/static/js/787.98ba4490.chunk.js",
-    "static/media/katoen.webp": "/ipmedth_prototype/static/media/katoen.35c148ad1baa3e5648f4.webp",
-    "static/media/jute.jpg": "/ipmedth_prototype/static/media/jute.ce0221b3c3adae25a355.jpg",
-    "static/media/denim.webp": "/ipmedth_prototype/static/media/denim.a398917a15d958fad9c8.webp",
     "index.html": "/ipmedth_prototype/index.html",
-    "main.0a34ee24.css.map": "/ipmedth_prototype/static/css/main.0a34ee24.css.map",
+    "main.c0a4bf42.css.map": "/ipmedth_prototype/static/css/main.c0a4bf42.css.map",
     "main.daf0b997.js.map": "/ipmedth_prototype/static/js/main.daf0b997.js.map",
     "787.98ba4490.chunk.js.map": "/ipmedth_prototype/static/js/787.98ba4490.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0a34ee24.css",
+    "static/css/main.c0a4bf42.css",
     "static/js/main.daf0b997.js"
   ]
 }
