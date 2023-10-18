@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ipmedth_prototype/static/css/main.a19212d9.css",
-    "main.js": "/ipmedth_prototype/static/js/main.08a26875.js",
+    "main.css": "/ipmedth_prototype/static/css/main.93c5ce15.css",
+    "main.js": "/ipmedth_prototype/static/js/main.ef9430c4.js",
     "static/js/787.98ba4490.chunk.js": "/ipmedth_prototype/static/js/787.98ba4490.chunk.js",
     "static/media/jute.jpg": "/ipmedth_prototype/static/media/jute.ce0221b3c3adae25a355.jpg",
     "index.html": "/ipmedth_prototype/index.html",
-    "main.a19212d9.css.map": "/ipmedth_prototype/static/css/main.a19212d9.css.map",
-    "main.08a26875.js.map": "/ipmedth_prototype/static/js/main.08a26875.js.map",
+    "main.93c5ce15.css.map": "/ipmedth_prototype/static/css/main.93c5ce15.css.map",
+    "main.ef9430c4.js.map": "/ipmedth_prototype/static/js/main.ef9430c4.js.map",
     "787.98ba4490.chunk.js.map": "/ipmedth_prototype/static/js/787.98ba4490.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a19212d9.css",
-    "static/js/main.08a26875.js"
+    "static/css/main.93c5ce15.css",
+    "static/js/main.ef9430c4.js"
   ]
 }
